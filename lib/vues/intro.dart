@@ -104,9 +104,14 @@ class Intro extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
                     ),
-                    child: const Text(
-                      "Continuer",
-                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/identity');
+                      },
+                      child: const Text(
+                        "Continuer",
+                        style: TextStyle(color: Colors.white, fontSize: 16),
+                      ),
                     ),
                   ),
                 ),
